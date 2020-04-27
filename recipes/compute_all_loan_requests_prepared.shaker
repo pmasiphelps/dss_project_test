@@ -25,8 +25,86 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": " months",
+            "to": ""
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Loan_Length"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "MORTGAG",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "ORTGAGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MORTAGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MORTGGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MOTGAGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MRTGAGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MORGAGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MORTGAE",
+            "to": "MORTGAGE"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Home_Ownership"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +112,19 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Amount_Requested": 135,
+    "Status": 100,
+    "Home_Ownership": 120,
+    "Loan_Purpose": 141,
+    "Loan_Length": 100,
+    "id": 100,
+    "Revolving_CREDIT_Balance": 195,
+    "FICO_Range": 120,
+    "Debt_To_Income_Ratio": 165,
+    "Open_CREDIT_Lines": 143,
+    "Inquiries_in_the_Last_6_Months": 240
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
