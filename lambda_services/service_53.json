@@ -1,9 +1,63 @@
 {
+  "name": "service_53",
   "endpoints": [
     {
       "modelRef": "9sqG5kim",
       "useJava": true,
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "unknown #1",
+          "q": {
+            "features": {
+              "id": 83869,
+              "Amount_Requested": 35000,
+              "Loan_Purpose": "debt_consolidation",
+              "Loan_Length": "36",
+              "Status": "pending",
+              "Debt_To_Income_Ratio": "20.46%",
+              "Home_Ownership": "RENT",
+              "FICO_Range": "735-739",
+              "Open_CREDIT_Lines": 19,
+              "Revolving_CREDIT_Balance": 21536,
+              "Inquiries_in_the_Last_6_Months": 0,
+              "Date_Of_Birth": "1984-28-07",
+              "Date_Of_Birth_parsed": "1984-07-28T00:00:00.000Z",
+              "age": 35,
+              "Monthly_Income": 9166.67,
+              "Employment_Length": "2015-07",
+              "State": "CT",
+              "Interest_Rate": 8.9,
+              "FICO_median": 737
+            }
+          }
+        },
+        {
+          "name": "unknown #2",
+          "q": {
+            "features": {
+              "id": 23446,
+              "Amount_Requested": 14000,
+              "Loan_Purpose": "debt_consolidation",
+              "Loan_Length": "60",
+              "Status": "pending",
+              "Debt_To_Income_Ratio": "11.95%",
+              "Home_Ownership": "RENT",
+              "FICO_Range": "740-744",
+              "Open_CREDIT_Lines": 6,
+              "Revolving_CREDIT_Balance": 7419,
+              "Inquiries_in_the_Last_6_Months": 0,
+              "Date_Of_Birth": "1983-30-07",
+              "Date_Of_Birth_parsed": "1983-07-30T00:00:00.000Z",
+              "age": 36,
+              "Monthly_Income": 4333.33,
+              "Employment_Length": "2007-05",
+              "State": "OH",
+              "Interest_Rate": 10.37,
+              "FICO_median": 742
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "id": "predict_default",
