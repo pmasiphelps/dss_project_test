@@ -25,8 +25,93 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Date_Of_Birth_parsed",
+        "formats": [
+          "yyyy-dd-MM"
+        ],
+        "columns": [
+          "Date_Of_Birth"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateDifference",
+      "params": {
+        "output": "age",
+        "outputUnit": "YEARS",
+        "input1": "Date_Of_Birth_parsed",
+        "compareTo": "NOW",
+        "reverse": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 2
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "FICO_Range",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": "-",
+        "outColPrefix": "FICO_Range_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(FICO_Range_0+FICO_Range_1)/2",
+        "column": "FICO_median"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "FICO_Range_1",
+          "FICO_Range_0",
+          "FICO_Range"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -34,7 +119,24 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Status": 100,
+    "Monthly_Income": 120,
+    "newcolumn_expression": 165,
+    "Interest_Rate": 113,
+    "FICO_Range_0": 105,
+    "FICO_Range_1": 105,
+    "FICO_Range": 120,
+    "Date_Of_Birth": 141,
+    "Default": 100,
+    "Date_Of_Birth_parsed": 190,
+    "FICO_median": 100,
+    "State": 100,
+    "id": 100,
+    "since_Date_Of_Birth_parsed_days": 248,
+    "Employment_Length": 143,
+    "age": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
