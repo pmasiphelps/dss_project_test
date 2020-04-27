@@ -1,0 +1,149 @@
+{
+  "joins": [
+    {
+      "table2": 1,
+      "table1": 0,
+      "conditionsMode": "AND",
+      "type": "LEFT",
+      "outerJoinOnTheLeft": true,
+      "on": []
+    }
+  ],
+  "selectedColumns": [
+    {
+      "name": "id",
+      "table": 0
+    },
+    {
+      "name": "Amount_Requested",
+      "table": 0
+    },
+    {
+      "name": "Loan_Purpose",
+      "table": 0
+    },
+    {
+      "name": "Loan_Length",
+      "table": 0
+    },
+    {
+      "name": "Status",
+      "table": 0
+    },
+    {
+      "name": "Debt_To_Income_Ratio",
+      "table": 0
+    },
+    {
+      "name": "Home_Ownership",
+      "table": 0
+    },
+    {
+      "name": "FICO_Range",
+      "table": 0
+    },
+    {
+      "name": "Open_CREDIT_Lines",
+      "table": 0
+    },
+    {
+      "name": "Revolving_CREDIT_Balance",
+      "table": 0
+    },
+    {
+      "name": "Inquiries_in_the_Last_6_Months",
+      "table": 0
+    },
+    {
+      "name": "Date_Of_Birth",
+      "table": 1
+    },
+    {
+      "name": "Date_Of_Birth_parsed",
+      "table": 1
+    },
+    {
+      "name": "age",
+      "table": 1
+    },
+    {
+      "name": "Monthly_Income",
+      "table": 1
+    },
+    {
+      "name": "Employment_Length",
+      "table": 1
+    },
+    {
+      "name": "State",
+      "table": 1
+    },
+    {
+      "name": "Interest_Rate",
+      "table": 1
+    },
+    {
+      "name": "FICO_median",
+      "table": 1
+    },
+    {
+      "name": "Default",
+      "table": 1
+    }
+  ],
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "virtualInputs": [
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 0,
+      "computedColumns": []
+    },
+    {
+      "preFilter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "autoSelectColumns": false,
+      "index": 1,
+      "computedColumns": []
+    }
+  ],
+  "enableAutoCastInJoinConditions": false
+}
