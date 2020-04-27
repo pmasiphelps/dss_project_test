@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587996192251
+    "lastModifiedOn": 1587996236823
   },
   "creationTag": {
     "versionNumber": 0,
@@ -263,7 +263,25 @@
   },
   "metricsChecks": {
     "runOnBuild": false,
-    "checks": [],
+    "checks": [
+      {
+        "metricId": "col_stats:MAX:Open_CREDIT_Lines",
+        "minimum": 0.0,
+        "maximum": 24.0,
+        "softMinimum": 0.0,
+        "softMaximum": 0.0,
+        "minimumEnabled": false,
+        "maximumEnabled": true,
+        "softMinimumEnabled": false,
+        "softMaximumEnabled": false,
+        "type": "numericRange",
+        "meta": {
+          "name": "Value in range",
+          "label": "Check open credit lines"
+        },
+        "computeOnBuildMode": "PARTITION"
+      }
+    ],
     "displayedState": {
       "partition": "NP",
       "checks": []
