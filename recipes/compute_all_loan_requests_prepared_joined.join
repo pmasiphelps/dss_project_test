@@ -4,90 +4,143 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {
+        "decisionColumn": {}
+      },
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "id",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "column2": {
+            "name": "id",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "EQ",
+          "strict": false
+        },
+        {
+          "column1": {
+            "name": "Status",
+            "table": 0
+          },
+          "column2": {
+            "name": "Status",
+            "table": 1
+          },
+          "maxDistance": 1,
+          "type": "EQ"
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "id",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "Amount_Requested",
+      "type": "bigint",
       "table": 0
     },
     {
       "name": "Loan_Purpose",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Loan_Length",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Status",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Debt_To_Income_Ratio",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Home_Ownership",
+      "type": "string",
       "table": 0
     },
     {
       "name": "FICO_Range",
+      "type": "string",
       "table": 0
     },
     {
       "name": "Open_CREDIT_Lines",
+      "type": "double",
       "table": 0
     },
     {
       "name": "Revolving_CREDIT_Balance",
+      "type": "double",
       "table": 0
     },
     {
       "name": "Inquiries_in_the_Last_6_Months",
+      "type": "double",
       "table": 0
     },
     {
       "name": "Date_Of_Birth",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Date_Of_Birth_parsed",
+      "type": "date",
       "table": 1
     },
     {
       "name": "age",
+      "type": "bigint",
       "table": 1
     },
     {
       "name": "Monthly_Income",
+      "type": "double",
       "table": 1
     },
     {
       "name": "Employment_Length",
+      "type": "string",
       "table": 1
     },
     {
       "name": "State",
+      "type": "string",
       "table": 1
     },
     {
       "name": "Interest_Rate",
+      "type": "double",
       "table": 1
     },
     {
       "name": "FICO_median",
+      "type": "double",
       "table": 1
     },
     {
       "name": "Default",
+      "type": "double",
       "table": 1
     }
   ],
@@ -145,5 +198,95 @@
       "computedColumns": []
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "bigint"
+          },
+          {
+            "name": "Amount_Requested",
+            "type": "bigint"
+          },
+          {
+            "name": "Loan_Purpose",
+            "type": "string"
+          },
+          {
+            "name": "Loan_Length",
+            "type": "string"
+          },
+          {
+            "name": "Status",
+            "type": "string"
+          },
+          {
+            "name": "Debt_To_Income_Ratio",
+            "type": "string"
+          },
+          {
+            "name": "Home_Ownership",
+            "type": "string"
+          },
+          {
+            "name": "FICO_Range",
+            "type": "string"
+          },
+          {
+            "name": "Open_CREDIT_Lines",
+            "type": "double"
+          },
+          {
+            "name": "Revolving_CREDIT_Balance",
+            "type": "double"
+          },
+          {
+            "name": "Inquiries_in_the_Last_6_Months",
+            "type": "double"
+          },
+          {
+            "name": "Date_Of_Birth",
+            "type": "string"
+          },
+          {
+            "name": "Date_Of_Birth_parsed",
+            "type": "date"
+          },
+          {
+            "name": "age",
+            "type": "bigint"
+          },
+          {
+            "name": "Monthly_Income",
+            "type": "double"
+          },
+          {
+            "name": "Employment_Length",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "Interest_Rate",
+            "type": "double"
+          },
+          {
+            "name": "FICO_median",
+            "type": "double"
+          },
+          {
+            "name": "Default",
+            "type": "double"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }
