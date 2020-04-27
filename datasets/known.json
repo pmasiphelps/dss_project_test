@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587995676319
+    "lastModifiedOn": 1587995725066
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,88 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "id",
+        "type": "bigint"
+      },
+      {
+        "name": "Amount_Requested",
+        "type": "bigint"
+      },
+      {
+        "name": "Loan_Purpose",
+        "type": "string"
+      },
+      {
+        "name": "Loan_Length",
+        "type": "string"
+      },
+      {
+        "name": "Status",
+        "type": "string"
+      },
+      {
+        "name": "Debt_To_Income_Ratio",
+        "type": "string"
+      },
+      {
+        "name": "Home_Ownership",
+        "type": "string"
+      },
+      {
+        "name": "FICO_Range",
+        "type": "string"
+      },
+      {
+        "name": "Open_CREDIT_Lines",
+        "type": "double"
+      },
+      {
+        "name": "Revolving_CREDIT_Balance",
+        "type": "double"
+      },
+      {
+        "name": "Inquiries_in_the_Last_6_Months",
+        "type": "double"
+      },
+      {
+        "name": "Date_Of_Birth",
+        "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth_parsed",
+        "type": "date"
+      },
+      {
+        "name": "age",
+        "type": "bigint"
+      },
+      {
+        "name": "Monthly_Income",
+        "type": "double"
+      },
+      {
+        "name": "Employment_Length",
+        "type": "string"
+      },
+      {
+        "name": "State",
+        "type": "string"
+      },
+      {
+        "name": "Interest_Rate",
+        "type": "double"
+      },
+      {
+        "name": "FICO_median",
+        "type": "double"
+      },
+      {
+        "name": "Default",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
