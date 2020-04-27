@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587995227911
+    "lastModifiedOn": 1587995441554
   },
   "creationTag": {
     "versionNumber": 0,
@@ -99,6 +99,14 @@
         "type": "string"
       },
       {
+        "name": "Date_Of_Birth_parsed",
+        "type": "date"
+      },
+      {
+        "name": "age",
+        "type": "bigint"
+      },
+      {
         "name": "Monthly_Income",
         "type": "double"
       },
@@ -115,8 +123,8 @@
         "type": "double"
       },
       {
-        "name": "FICO_Range",
-        "type": "string"
+        "name": "FICO_median",
+        "type": "double"
       },
       {
         "name": "Default",
