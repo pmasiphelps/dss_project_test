@@ -47,7 +47,7 @@
       "forbiddenEngines": [],
       "enginesPreferenceOrder": [],
       "forbiddenByRecipeType": {
-        "split": [
+        "join": [
           "DSS"
         ]
       },
@@ -64,7 +64,8 @@
       }
     },
     "container": {
-      "containerMode": "NONE"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "k8s_dataiku_ds"
     },
     "datasetsCreationSettings": {
       "useGlobal": true,
@@ -173,11 +174,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "api:XMuHHQ9AtM20y8Q5"
     },
-    "lastModifiedOn": 1588606971099
+    "lastModifiedOn": 1588607354693
   },
   "creationTag": {
     "versionNumber": 0,
