@@ -46,7 +46,11 @@
     "recipeEnginesPreferences": {
       "forbiddenEngines": [],
       "enginesPreferenceOrder": [],
-      "forbiddenByRecipeType": {},
+      "forbiddenByRecipeType": {
+        "JOIN": [
+          "DSS"
+        ]
+      },
       "preferenceByRecipeType": {}
     },
     "codeEnvs": {
@@ -167,6 +171,13 @@
     "displayedState": {
       "checks": []
     }
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1588606307450
   },
   "creationTag": {
     "versionNumber": 0,
