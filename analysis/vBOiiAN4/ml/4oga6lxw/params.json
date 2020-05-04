@@ -44,7 +44,7 @@
   },
   "preprocessing": {
     "feature_selection_params": {
-      "method": "NONE",
+      "method": "PCA",
       "random_forest_params": {
         "n_trees": 30,
         "depth": 10,
