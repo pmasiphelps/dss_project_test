@@ -562,7 +562,7 @@
       "max_feature_prop": 0.3
     },
     "random_forest_classification": {
-      "enabled": true,
+      "enabled": false,
       "n_estimators": {
         "values": [
           100,
@@ -900,7 +900,7 @@
       "leaf_size": 30
     },
     "logistic_regression": {
-      "enabled": true,
+      "enabled": false,
       "multi_class": "ovr",
       "penalty": {
         "values": {
@@ -955,7 +955,7 @@
       "learning_rate_init": 0.001
     },
     "svc_classifier": {
-      "enabled": false,
+      "enabled": true,
       "C": {
         "values": [
           1.0
