@@ -1449,7 +1449,7 @@
     "envMode": "USE_BUILTIN_MODE"
   },
   "containerSelection": {
-    "containerMode": "INHERIT"
+    "containerMode": "NONE"
   },
   "sparkParams": {
     "sparkConf": {
