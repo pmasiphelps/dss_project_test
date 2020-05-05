@@ -5,11 +5,11 @@
   "name": "Make Predictions",
   "active": false,
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588605305241
+    "lastModifiedOn": 1588647758576
   },
   "checklists": {
     "checklists": []
@@ -38,7 +38,24 @@
       }
     }
   ],
-  "reporters": [],
+  "reporters": [
+    {
+      "active": true,
+      "messaging": {
+        "type": "msft-teams-scenario",
+        "configuration": {
+          "message": "${if(outcome \u003d\u003d \u0027SUCCESS\u0027, \u0027\u0026#x2705;\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027FAILED\u0027, \u0027\u0026#x1F534;\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027WARNING\u0027, \u0027\u0026#x1F536;\u0027, \u0027\u0027)}${if(outcome \u003d\u003d \u0027\u0027 || outcome \u003d\u003d \u0027N/A\u0027, \u0027\u0026#x1F514;\u0027, \u0027\u0027)} DSS Scenario [${scenarioName}](${scenarioRunURL}) triggered by ${triggerName}: **${outcome}**",
+          "useProxy": true,
+          "useGlobalChannel": true,
+          "channelId": "teams_dataiku_sas_test_pmp"
+        }
+      },
+      "id": "8NI1qyug",
+      "runConditionEnabled": false,
+      "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
+      "phase": "END"
+    }
+  ],
   "params": {
     "steps": [
       {
