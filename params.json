@@ -118,7 +118,7 @@
       }
     }
   },
-  "name": "Predicting Loan Defaults 53",
+  "name": "Predicting Loan Defaults 53 (new-branch-1-test)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -174,11 +174,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588689656939
+    "lastModifiedOn": 1588689660136
   },
   "creationTag": {
     "versionNumber": 0,
@@ -187,7 +187,7 @@
     },
     "lastModifiedOn": 1587994827266
   },
-  "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020",
+  "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020\nThe project *PREDICTING_LOAN_DEFAULTS_53_NEW_BRANCH_1_TEST* was copied from *PREDICTINGLOANDEFAULTS53* by pat on May 05th 2020",
   "tags": [
     "duplicated"
   ],
