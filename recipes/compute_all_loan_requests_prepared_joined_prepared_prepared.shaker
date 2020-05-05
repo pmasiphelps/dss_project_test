@@ -25,7 +25,10 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
   "steps": [],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
@@ -34,7 +37,28 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "Amount_Requested": 135,
+    "Status": 100,
+    "Monthly_Income": 120,
+    "Loan_Purpose": 141,
+    "Interest_Rate": 113,
+    "Revolving_CREDIT_Balance": 195,
+    "FICO_Range": 120,
+    "Date_Of_Birth": 141,
+    "Date_Of_Birth_parsed": 190,
+    "Default": 100,
+    "Home_Ownership": 120,
+    "FICO_median": 100,
+    "State": 100,
+    "Loan_Length": 100,
+    "id": 100,
+    "Debt_To_Income_Ratio": 165,
+    "Open_CREDIT_Lines": 143,
+    "age": 100,
+    "Employment_Length": 143,
+    "Inquiries_in_the_Last_6_Months": 240
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
