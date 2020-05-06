@@ -8,7 +8,7 @@
     },
     "infra": {
       "containerSelection": {
-        "containerMode": "INHERIT"
+        "containerMode": "NONE"
       },
       "overrideGlobalK8sExposition": false,
       "exposition": {
@@ -27,11 +27,11 @@
   "config": {},
   "name": "testhoudy",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588774674560
+    "lastModifiedOn": 1588774692591
   },
   "creationTag": {
     "versionNumber": 0,
