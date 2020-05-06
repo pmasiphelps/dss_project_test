@@ -4,7 +4,7 @@
   "params": {
     "backendEnabled": true,
     "enableJavascriptModules": false,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": false,
     "envSelection": {
       "envMode": "INHERIT"
@@ -16,7 +16,8 @@
     ],
     "infra": {
       "containerSelection": {
-        "containerMode": "INHERIT"
+        "containerMode": "EXPLICIT_CONTAINER",
+        "containerConf": "k8s_dataiku_ds"
       },
       "overrideGlobalK8sExposition": false,
       "exposition": {
@@ -36,11 +37,11 @@
   "name": "testhoudy3",
   "apiKey": "pF9nuiHoX8VDaGJzTE7B6G8vJNk9lqzV",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588787826870
+    "lastModifiedOn": 1588787837134
   },
   "creationTag": {
     "versionNumber": 0,
