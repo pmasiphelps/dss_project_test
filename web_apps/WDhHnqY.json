@@ -2,7 +2,7 @@
   "type": "STANDARD",
   "hasLegacyBackendURL": false,
   "params": {
-    "backendEnabled": false,
+    "backendEnabled": true,
     "enableJavascriptModules": false,
     "autoStartBackend": false,
     "hideJSSecurityPanel": false,
@@ -36,11 +36,11 @@
   "name": "testhoudy3",
   "apiKey": "pF9nuiHoX8VDaGJzTE7B6G8vJNk9lqzV",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588787575855
+    "lastModifiedOn": 1588787816173
   },
   "creationTag": {
     "versionNumber": 0,
