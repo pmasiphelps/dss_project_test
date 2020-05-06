@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1587994887353
+    "lastModifiedOn": 1588774996036
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,11 +86,11 @@
     "columns": [
       {
         "name": "id",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Amount_Requested",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Loan_Purpose",
@@ -118,18 +118,18 @@
       },
       {
         "name": "Open_CREDIT_Lines",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Revolving_CREDIT_Balance",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Inquiries_in_the_Last_6_Months",
-        "type": "string"
+        "type": "double"
       }
     ],
-    "userModified": true
+    "userModified": false
   },
   "metrics": {
     "probes": [
