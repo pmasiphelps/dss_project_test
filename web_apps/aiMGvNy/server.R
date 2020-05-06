@@ -4,12 +4,12 @@ library(httr)
 library(dplyr)
 library(dataiku)
 
-INSTANCE_URL <- ### THE URL OF YOUR DSS INSTANCE HERE
-PROJECT_KEY <- ### YOUR PROJECT KEY HERE
-API_KEY <- ### YOUR API KEY HERE
-SCENARIO_ID <- ### THE ID OF YOUR SCENARIO HERE
-OUTPUT_DATASET <- ### THE NAME OF YOUR OUTPUT DATASET HERE
-INPUT_DATASET <- ### THE NAME OF YOUR INPUT DATASET HERE
+INSTANCE_URL <- 'http://localhost:11500/'
+PROJECT_KEY <- 'PREDICTINGLOANDEFAULTS53'
+API_KEY <- 'dToAmjEoBZ4RjEIHgsJu3tgNQ3FfBQFq'
+SCENARIO_ID <- 'Make_Predictions'
+OUTPUT_DATASET <- 'unknown_scored'
+INPUT_DATASET <- 'all_loan_requests'
 
 shinyServer(function(input, output) {
     
