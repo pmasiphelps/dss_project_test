@@ -1,0 +1,24 @@
+[
+  {
+    "execSQLLike": false,
+    "localDatasets": [],
+    "projectPrivileges": {
+      "admin": false,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false
+    },
+    "onBehalf": "WDhHnqY",
+    "id": "9z6dzCsRl3TRHYaa",
+    "key": "pF9nuiHoX8VDaGJzTE7B6G8vJNk9lqzV",
+    "label": "Key for Web app testhoudy3(WDhHnqY)",
+    "createdOn": 1588787575619
+  }
+]

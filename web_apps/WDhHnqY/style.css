@@ -1,0 +1,28 @@
+.form-control {margin-top: 5%; margin-bottom: 5%}
+#input-group {margin-top: 10%}
+#left_panel {margin-top: 10%; margin-left: 5%}
+
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.7s linear infinite;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loading {
+    text-align: center;
+    margin-top: 25%;
+    display: none
+}
+
+#loading h3 { color: #95a5a6;}
+#df_table {margin-top: 2%; padding: 1% 1%; display:none}
