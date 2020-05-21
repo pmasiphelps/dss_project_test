@@ -62,7 +62,7 @@
     },
     "container": {
       "containerMode": "EXPLICIT_CONTAINER",
-      "containerConf": "docker_local"
+      "containerConf": "k8s_dataiku_ds"
     },
     "datasetsCreationSettings": {
       "useGlobal": true,
@@ -171,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 11,
+    "versionNumber": 12,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "api:XMuHHQ9AtM20y8Q5"
     },
-    "lastModifiedOn": 1588693680377
+    "lastModifiedOn": 1590073182221
   },
   "creationTag": {
     "versionNumber": 0,
