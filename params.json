@@ -7,6 +7,36 @@
     "objects": []
   },
   "projectType": "REGULAR",
+  "bundleExporterSettings": {
+    "exportOptions": {
+      "exportUploads": false,
+      "exportManagedFS": false,
+      "exportAnalysisModels": false,
+      "exportSavedModels": false,
+      "exportManagedFolders": false,
+      "exportAllInputDatasets": false,
+      "exportAllDatasets": false,
+      "exportAllInputManagedFolders": false,
+      "exportGitRepository": false,
+      "exportInsightsData": false,
+      "useManualPluginsInfo": false,
+      "includedDatasetsData": [
+        {
+          "name": "customer_information"
+        },
+        {
+          "name": "all_loan_requests"
+        }
+      ],
+      "includedSavedModels": [
+        {
+          "id": "9sqG5kim"
+        }
+      ],
+      "includedManagedFolders": [],
+      "shareAllInputDatasets": false
+    }
+  },
   "owner": "admin",
   "permissions": [],
   "additionalDashboardUsers": {
@@ -171,11 +201,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590542615700
+    "lastModifiedOn": 1590596694131
   },
   "creationTag": {
     "versionNumber": 0,
