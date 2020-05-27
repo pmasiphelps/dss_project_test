@@ -115,7 +115,6 @@
     }
   },
   "name": "Predicting Loan Defaults 53",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -171,11 +170,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
-      "login": "api:XMuHHQ9AtM20y8Q5"
+      "login": "admin"
     },
-    "lastModifiedOn": 1590074823221
+    "lastModifiedOn": 1590542483293
   },
   "creationTag": {
     "versionNumber": 0,
@@ -185,7 +184,9 @@
     "lastModifiedOn": 1587994827266
   },
   "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {
     "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
