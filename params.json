@@ -144,8 +144,7 @@
       }
     }
   },
-  "name": "Predicting Loan Defaults 53",
-  "projectStatus": "Sandbox",
+  "name": "Predicting Loan Defaults 53 (dev_branch_patrick)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -201,11 +200,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590596694131
+    "lastModifiedOn": 1590598081275
   },
   "creationTag": {
     "versionNumber": 0,
@@ -214,8 +213,10 @@
     },
     "lastModifiedOn": 1587994827266
   },
-  "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020",
-  "tags": [],
+  "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020\nThe project *PREDICTING_LOAN_DEFAULTS_53_DEV_BRANCH_PATRICK* was copied from *PREDICTINGLOANDEFAULTS53* by pat on May 27th 2020",
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {
     "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
