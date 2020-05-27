@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590542550088
+    "lastModifiedOn": 1590590052934
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,7 +100,8 @@
       },
       {
         "name": "Date_Of_Birth_parsed",
-        "type": "date"
+        "type": "date",
+        "meaning": "Date"
       },
       {
         "name": "age",
