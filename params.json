@@ -114,7 +114,8 @@
       }
     }
   },
-  "name": "Predicting Loan Defaults 53 (branch1_test_pmp)",
+  "name": "Predicting Loan Defaults 53",
+  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -170,11 +171,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590542486583
+    "lastModifiedOn": 1590542615700
   },
   "creationTag": {
     "versionNumber": 0,
@@ -183,10 +184,8 @@
     },
     "lastModifiedOn": 1587994827266
   },
-  "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020\nThe project *PREDICTING_LOAN_DEFAULTS_53_BRANCH1_TEST_PMP* was copied from *PREDICTINGLOANDEFAULTS53* by pat on May 26th 2020",
-  "tags": [
-    "duplicated"
-  ],
+  "shortDesc": "The project *Predicting Loan Defaults 53* was created by pat on Apr 27th 2020",
+  "tags": [],
   "customFields": {
     "gdpr_forbid_dataset_sharing": false,
     "gdpr_forbid_dataset_export": false,
