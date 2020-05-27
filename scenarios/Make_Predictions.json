@@ -5,11 +5,11 @@
   "name": "Make Predictions",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588647758576
+    "lastModifiedOn": 1590596635455
   },
   "checklists": {
     "checklists": []
@@ -58,6 +58,31 @@
   ],
   "params": {
     "steps": [
+      {
+        "id": "check_false_d_all_loan_requests_prepared_joined",
+        "type": "check_dataset",
+        "name": "Step #2",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "checks": [
+            {
+              "type": "DATASET",
+              "itemId": "all_loan_requests_prepared_joined",
+              "partitionsSpec": ""
+            }
+          ],
+          "warningsAsErrors": false,
+          "proceedOnFailure": false
+        }
+      },
       {
         "id": "build_0_true_d_unknown_scored",
         "type": "build_flowitem",
